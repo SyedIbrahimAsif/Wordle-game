@@ -28,7 +28,6 @@ def check_guess(guess,word):
     for guessChar in range(0,len(guess)-1):
         if not foundchar[guessChar] and not misplaced[guessChar] and guess[guessChar] not in not_in_word:
             not_in_word.append(guess[guessChar])
-import functions as fn
 replay = True
 while replay:
     word = choose_word()
